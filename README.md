@@ -11,6 +11,8 @@ Supports triggering ssh commands on the HomeBridge platform.
 
 ## Configuration
 
+This plugin can be configured using the [Homebridge UI](https://github.com/homebridge/homebridge-config-ui-x). It exposes a configuration schema so the above settings can be entered through the graphical interface.
+
 Configuration sample:
 
 ```
