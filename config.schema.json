@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "pluginAlias": "SSH",
+  "pluginType": "accessory",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true
+      },
+      "on": {
+        "title": "On Command",
+        "type": "string",
+        "required": true
+      },
+      "off": {
+        "title": "Off Command",
+        "type": "string",
+        "required": true
+      },
+      "state": {
+        "title": "State Command",
+        "type": "string"
+      },
+      "on_value": {
+        "title": "On Value",
+        "type": "string",
+        "default": "playing"
+      },
+      "exact_match": {
+        "title": "Exact Match",
+        "type": "boolean",
+        "default": true
+      },
+      "ssh": {
+        "title": "SSH Settings",
+        "type": "object",
+        "properties": {
+          "host": {
+            "title": "Host",
+            "type": "string",
+            "required": true
+          },
+          "port": {
+            "title": "Port",
+            "type": "integer",
+            "default": 22
+          },
+          "user": {
+            "title": "Username",
+            "type": "string",
+            "required": true
+          },
+          "password": {
+            "title": "Password",
+            "type": "string"
+          },
+          "key": {
+            "title": "Private Key Path",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+}
